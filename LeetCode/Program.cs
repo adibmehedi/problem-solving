@@ -16,7 +16,8 @@ namespace LeetCode
             //Console.WriteLine(Program.MaximumDifference(new int[] { 1,2 }));
             //Console.WriteLine(Program.ValidParentheses("(}"));
             //Console.WriteLine(RunningSum.RunningSumSolution(new int[] { 1,2,3,4 }));
-            Console.Write(FindPivotIndex.Solution(new int[] { 2, 1, -1 }));
+            //Console.Write(FindPivotIndex.Solution(new int[] { 2, 1, -1 }));
+            Console.Write(IsomorphicStrings.Solution("foo", "bar"));
         }
 
         public static bool ValidParentheses(string s) {
