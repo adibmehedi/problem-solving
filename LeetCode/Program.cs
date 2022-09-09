@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace LeetCode
 {
-
+    //linkedlist
     public class ListNode
     {
         public int val;
@@ -15,6 +15,40 @@ namespace LeetCode
             this.next = next;
         }
     }
+
+    // tree
+    public class Node
+    {
+        public int val;
+        public IList<Node> children;
+
+        public Node() { }
+
+        public Node(int _val)
+        {
+            val = _val;
+        }
+
+        public Node(int _val, IList<Node> _children)
+        {
+            val = _val;
+            children = _children;
+        }
+    }
+
+    // binary tree
+    public class TreeNode {
+          public int val;
+          public TreeNode left;
+          public TreeNode right;
+          public TreeNode(int val=0, TreeNode left=null, TreeNode right=null) {
+              this.val = val;
+              this.left = left;
+              this.right = right;
+         }
+     }
+     
+
     class Program
     {
         static void Main(string[] args)
@@ -29,7 +63,9 @@ namespace LeetCode
             //Console.WriteLine(RunningSum.RunningSumSolution(new int[] { 1,2,3,4 }));
             //Console.Write(FindPivotIndex.Solution(new int[] { 2, 1, -1 }));
             //Console.Write(IsomorphicStrings.Solution("foo", "bar"));
-            Console.Write(IsSubsequence.Solution("", "abcbbbbb"));
+            //Console.Write(IsSubsequence.Solution("", "abcbbbbb"));
+            //Console.WriteLine(BinarySearch.Search(new int[] { -1, 0, 3, 5, 9, 12 }, 6));
+            Console.WriteLine(FirstBadVersion.FirstBadVersionSolution(2000000000));
         }
 
         public static bool ValidParentheses(string s) {
