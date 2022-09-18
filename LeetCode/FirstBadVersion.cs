@@ -10,11 +10,6 @@ namespace LeetCode
             return x == 1000000000 ? false: true;
         }
 
-        //public int find(int low, int high)
-        //{
-        //    int middle = low + (high - low);
-        //    if()
-        //}
         public static int FirstBadVersionSolution(int n)
         {
             int low = 0;
