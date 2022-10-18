@@ -19,7 +19,9 @@ namespace LeetCode
                 }
             }
 
-            return charList.Count == 27 ? true : false; 
+            return charList.Count == 26 ? true : false; 
         }
     }
+
+
 }
